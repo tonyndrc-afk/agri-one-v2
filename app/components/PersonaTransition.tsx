@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useStore } from "./store";
 import { I } from "./Icons";
+import { assetPath } from "../lib/assetPath";
 
 const ICONS: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
   particulier: I.Home,
@@ -102,7 +103,7 @@ export function PersonaTransition() {
 
             {/* Logo wordmark */}
             <motion.img
-              src="/agri-one-logo-mark.png"
+              src={assetPath("/agri-one-logo-mark.png")}
               alt=""
               className="absolute top-8 left-8 h-10 w-10 opacity-90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)]"
               initial={{ opacity: 0, y: -10 }}

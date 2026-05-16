@@ -2,6 +2,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { assetPath } from "../lib/assetPath";
 
 const STEPS = [
   "Connexion aux capteurs IoT…",
@@ -78,7 +79,7 @@ export function SplashGate() {
                 transition={{ duration: 1.8, repeat: Infinity }}
               />
               <motion.img
-                src="/agri-one-logo-mark.png"
+                src={assetPath("/agri-one-logo-mark.png")}
                 alt="Agri One"
                 className="relative h-28 w-28 drop-shadow-[0_4px_20px_rgba(0,0,0,0.4)]"
                 animate={{ y: [0, -4, 0] }}
