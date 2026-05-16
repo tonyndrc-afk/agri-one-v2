@@ -5,7 +5,7 @@ import { LiveStat, LiveSparkCard, QuickActions } from "../../components/live";
 import { Reveal, RevealItem } from "../../components/motion";
 import { PlantPhotoCard } from "../../components/PlantPhotoCard";
 import { OpenCopilotBtn, AISuggestionCard, ActionButton, ToastButton } from "../../components/CopilotInline";
-import Image from "next/image";
+import { Img as Image } from "../../components/Img";
 import { photos } from "../../photos";
 
 export default function EcoleApp() {

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Img as Image } from "./Img";
 import Link from "next/link";
 import { I } from "./Icons";
 import { personas, type PersonaId } from "../personas";

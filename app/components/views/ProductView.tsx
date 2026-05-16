@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import { Img as Image } from "../Img";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { motion } from "framer-motion";

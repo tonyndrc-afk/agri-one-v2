@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
+import { Img as Image } from "../components/Img";
 import { I } from "../components/Icons";
 import { useStore } from "../components/store";
 import { personas, type PersonaId } from "../personas";
